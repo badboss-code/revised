@@ -72,6 +72,10 @@ nav {
     padding: 100px 50px;
     height: 100vh;
 }
+
+.text-content {
+    margin-bottom: 100px;
+}
 .hero div h1{
     font-size: 24px;
     text-transform: uppercase;
@@ -87,27 +91,35 @@ nav {
 
 .hero img{
     width: 100%;
-    display: none;
+    /* display: none; */
+}
+.cta {
+   border: none; 
+   padding: 20px;
+   border-radius: 10px;
+   background: #3a30df;
 }
 
-.cta {
+.cta div {
     display: flex;
-    border: none;
-    align-items: center;
-    padding: 20px;
-    background: #3a30df;
-    border-radius: 10px;
     
 }
 .cta p {
-    flex: 1;
-    font-size: 24px;
+    /* flex: 1; */
+    
+    font-size: 16px;
     color: white;
     text-transform: uppercase;
 }
 
 .call-icon {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+
+    /* to be fixed later */
+
+    display:none;
 
 }
