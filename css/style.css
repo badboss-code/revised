@@ -94,13 +94,16 @@ nav {
     display: flex;
     border: none;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
     background: #3a30df;
     border-radius: 10px;
-    color: white;
+    
 }
 .cta p {
     flex: 1;
+    font-size: 24px;
+    color: white;
+    text-transform: uppercase;
 }
 
 .call-icon {
