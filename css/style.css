@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+ul li{
+    list-style-type: none;
+}
+
+body{
+    background-color: #f5f5f5;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5em;
+    opacity: 0.75;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25px;
+    align-items: center;
+    background: white;
+    position: sticky;
+    top: 0;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 10;
+}
+
+
+.logo{
+    font-size: 16px;
+    color: #3a30df;
+    letter-spacing: 2px;
+    opacity: .75;
+}
+
+nav {
+    display: flex;
+
+}
+
+.show-mobile{
+    display: block;
+}
+.show-mobile div{
+    height: 5px;
+    width: 30px;
+    background: linear-gradient(to right, #333, #888);
+    margin-bottom: 5px;
+    border-radius: 1px;
+}
+
+
+.show-desktop{
+    display: none;
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+    padding: 100px 50px;
+    height: 100vh;
+}
+.hero div h1{
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+.desc{
+    margin-bottom: 60px;
+    font-size: 14px;
+}
+
+.hero img{
+    width: 100%;
+    display: none;
+}
+
+.cta {
+    display: flex;
+    border: none;
+    align-items: center;
+    padding: 10px;
+    background: #3a30df;
+    border-radius: 10px;
+    color: white;
+}
+.cta p {
+    flex: 1;
+}
+
+.call-icon {
+    width: 25px;
+    height: 25px;
+
+}
