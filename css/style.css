@@ -1,18 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
 
-* {
+*{
     margin: 0;
     padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 10px;
+    background: #fafafa;
     box-sizing: border-box;
-    
 }
 
-ul li{
-    list-style-type: none;
+a {
+    text-decoration: none;
 }
 
-body{
-    background-color: #f5f5f5;
+ul {
+    list-style: none;
 }
 p{
     font-family: 'Roboto', sans-serif;
@@ -23,47 +28,68 @@ p{
 h1, h2, h3, h4, h5, h6{
     font-family: 'Montserrat', sans-serif;
 }
-
 header {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 15px 25px;
+    padding: 1.5rem;
     align-items: center;
-    background: white;
     position: sticky;
     top: 0;
-    font-family: 'Montserrat', sans-serif;
-    z-index: 10;
+    left: 0;
+    background-color: white;
+    
 }
 
-
-.logo{
-    font-size: 16px;
+.logo {
+    font-size: 2rem;
     color: #3a30df;
-    letter-spacing: 2px;
-    opacity: .75;
 }
 
-nav {
+.menu-icon{
+    width: 3rem;
+    height: 3rem;
+}
+
+.nav-list {
+    background-color: #d7d4ed;
+    width: 25rem;
+    position: fixed;
+    top: 0;
+    right: -30rem;
+    
+    height: 100vh;
+    padding: 2rem;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 650ms ease-in-out;
+    z-index: 2000;
+
 
 }
 
-.show-mobile{
-    display: block;
-}
-.show-mobile div{
-    height: 5px;
-    width: 30px;
-    background: linear-gradient(to right, #333, #888);
-    margin-bottom: 5px;
-    border-radius: 1px;
+.nav-item {
+    font-size: 1.6rem;
+    margin: 1rem 0;
 }
 
-
-.show-desktop{
-    display: none;
+.close {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
 }
+.open {
+    
+}
+
+.current {
+    
+    top: 0;
+    transform: translateX(-25rem);
+}
+
 
 .hero {
     display: flex;
