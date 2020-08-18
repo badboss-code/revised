@@ -1,13 +1,11 @@
-let op = document.getElementById('op');
-let cl = document.getElementById('cl');
-let nav = document.getElementById('nav');
-
-// event listener 
-
-op.addEventListener('click', ()=>{
-    nav.classList.add('current');
+//start
+//function expression to select elements
+const selectElement = (s) => document.querySelector(s);
+//Open the menu on click
+selectElement('.open').addEventListener('click', () =>{
+    selectElement('.nav-list').classList.add('active');
 })
-
-cl.addEventListener('click', ()=>{
-    nav.classList.remove('current');
+//Close the menu on click
+selectElement('.close').addEventListener('click', () =>{
+    selectElement('.nav-list').classList.remove('active');
 })
