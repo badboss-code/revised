@@ -32,7 +32,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem;
+    padding: 1.5rem ;
     align-items: center;
     position: sticky;
     top: 0;
@@ -49,23 +49,23 @@ header {
 .menu-icon{
     width: 3rem;
     height: 3rem;
+    cursor: pointer;
 }
 
 .nav-list {
     background-color: #d7d4ed;
     width: 25rem;
+    height: 100vh;
     position: fixed;
     top: 0;
     right: -30rem;
-    
-    height: 100vh;
-    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: all 650ms ease-in-out;
     z-index: 2000;
+    transition: all 650ms ease-in-out;
+    
 
 
 }
@@ -84,8 +84,7 @@ header {
     
 }
 
-.current {
-    
+.current { 
     top: 0;
     transform: translateX(-25rem);
 }
